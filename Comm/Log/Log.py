@@ -1,6 +1,6 @@
 import os
 import logging
-from Conf.Config import log_cfg
+from Conf.config import log_cfg
 
 _BaseHome = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
