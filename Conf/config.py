@@ -33,5 +33,5 @@ print(sys_cfg)
 print(smtp_cfg)
 print(smtp_cfg['host'])
 log_cfg = config['log']
-print(smtp_cfg)
+print(log_cfg)
 
