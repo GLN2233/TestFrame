@@ -35,3 +35,6 @@ print(smtp_cfg['host'])
 log_cfg = config['log']
 print(log_cfg)
 
+smtp_cfg = config['smtp']
+email_cfg = config['email']
+

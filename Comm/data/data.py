@@ -12,6 +12,3 @@ sheet1 = read_excel('C:\\Users\\yinghai\\PycharmProjects\\TestFrame\\Comm\\data\
 sheet2 = read_excel('C:\\Users\\yinghai\\PycharmProjects\\TestFrame\\Comm\\data\\baidu_fanyi.xlsx', sheet_name='Sheet2')
 print(sheet1)
 print(sheet2)
-# io = r'C:\Users\yinghai\PycharmProjects\TestFrame\Comm\data\baidu_fanyi.xlsx'
-# data = pd.read_excel(io, sheet_name=1)
-# print(data.head(2))
