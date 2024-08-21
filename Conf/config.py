@@ -1,8 +1,10 @@
 import os
 from configparser import ConfigParser
+
 # 使用相对目录确定文件位置
 _conf_dir = os.path.dirname(__file__)
 _conf_file = os.path.join(_conf_dir, 'config.ini')
+
 
 # 继承ConfigParser，写一个将结果转为dict的方法
 class MyParser(ConfigParser):
@@ -11,6 +13,7 @@ class MyParser(ConfigParser):
         for k in d:
             d[k] = dict(d[k])
         return d
+
 
 # 读取所有配置，以字典方式输出结果
 def _get_all_conf():
@@ -24,17 +27,18 @@ def _get_all_conf():
             raise ValueError("Read config file failed: %s" % OSError)
     return result
 
+
 # 将各配置读取出来，放在变量中，后续其它文件直接引用这个这些变量
 config = _get_all_conf()
 sys_cfg = config['sys']
 smtp_cfg = config['smtp']
 
-print(sys_cfg)
-print(smtp_cfg)
-print(smtp_cfg['host'])
+# print(sys_cfg)
+# print(smtp_cfg)
+# print(smtp_cfg['host'])
 log_cfg = config['log']
-print(log_cfg)
+# print(log_cfg)
 
-smtp_cfg = config['smtp']
+# smtp_cfg = config['smtp']
 email_cfg = config['email']
-
+print(email_cfg)
