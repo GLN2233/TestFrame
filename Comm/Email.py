@@ -91,7 +91,7 @@ class Email:
 # 示例用法
 title = "测试邮件"
 context = "这是一封测试邮件"
-file = 'C:\\Users\\yinghai\\PycharmProjects\\TestFrame\\Comm\\data\\baidu_fanyi.xlsx'
+file = 'baidu_fanyi.xlsx'
 mail = Email(title, context, file)
 send = mail.send_mail()
 print(send)

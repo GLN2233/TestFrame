@@ -1,6 +1,7 @@
 import os
 import logging
 from Conf.config import log_cfg
+# PIL在python3中被移植到pillow中
 from PIL import ImageGrab
 import time
 

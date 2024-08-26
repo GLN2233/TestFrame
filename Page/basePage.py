@@ -47,7 +47,6 @@ class Page(object):
                     cmd = cmd[:-1] + 'args' + ')'
         return cmd
 
-
 def get_page_elements(page):
     """动态加载页面定义文件，获取文件中定义的元素列表elements"""
     elements = None
@@ -56,9 +55,5 @@ def get_page_elements(page):
             m = importlib.import_module(page)
             elements = m.elements
         except Exception as e:
-            logger.error('error info : %s' % (e))
+            logger.error('error info : %s' %(e))
     return elements
-
-
-
-

@@ -10,7 +10,7 @@ def read_excel(file, **kwargs):
         return data_dict
 
 
-sheet1 = read_excel('C:\\Users\\yinghai\\PycharmProjects\\TestFrame\\Comm\\data\\baidu_fanyi.xlsx')
-sheet2 = read_excel('C:\\Users\\yinghai\\PycharmProjects\\TestFrame\\Comm\\data\\baidu_fanyi.xlsx', sheet_name='Sheet2')
+sheet1 = read_excel('baidu_fanyi.xlsx')
+sheet2 = read_excel('baidu_fanyi.xlsx', sheet_name='Sheet2')
 print(sheet1)
 print(sheet2)

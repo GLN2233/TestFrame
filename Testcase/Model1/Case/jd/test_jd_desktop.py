@@ -5,10 +5,10 @@ import logging
 from selenium import webdriver
 from time import sleep
 
-from Comm.Log.Log import screen
+from Comm.Log import screen
 from Page.basePage import Page
 
-from Comm.data.data import read_excel
+from Comm.data import read_excel
 from main import TestCasePath
 
 logger = logging.getLogger('main.jd')

@@ -1,6 +1,3 @@
-import logging
-
-logger = logging.getLogger('main.jd')
 import unittest
 import os
 import time
