@@ -85,6 +85,3 @@ class BaseAPI(object):
                 cmd = _get_cmd(key, 'expected')
                 exec(cmd)
         return expected
-
-
-

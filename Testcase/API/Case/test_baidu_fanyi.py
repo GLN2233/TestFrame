@@ -12,11 +12,10 @@ from APIs.base_api import BaseAPI, check_result
 
 
 # 开通普通个人的百度翻译接口，设置appid和appkey.
-# app_id = your appid
-# app_key = your appkey
-
+app_id = "13134106065"
+app_key = "glnts7218"
 # 获取测试数据
-file = os.path.join(TestCasePath, 'API/TestData/baidu_fanyi.xlsx')
+file = os.path.join(TestCasePath, 'C:\\Users\\yinghai\\PycharmProjects\\TestFrame\\Testcase\\API\\Testdata\\baidu_fanyi.xlsx')
 test_data = read_excel(file)
 api = 'APIs.fanyi.baidu'
 

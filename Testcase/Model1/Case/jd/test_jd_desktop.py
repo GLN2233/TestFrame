@@ -25,7 +25,7 @@ class TestJdSearchDesktop(unittest.TestCase):
     """京东搜索测试"""
 
     def setUp(self):
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Edge()
         self.count = 0
         self.result = []
 
